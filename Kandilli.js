@@ -8,7 +8,7 @@ var lineObjArr = [];
 for (var i = 0; i < lines.length; i++)
 {
 	var lineObj = {};
-	lineObj.Magnitude = parseFloat(lines[i].substring(60, 64));
+	lineObj.Magnitude = parseFloat(lines[i].substring(60, 63));
 	lineObj.Text = lines[i];
 	lineObjArr.push(lineObj);
 }
