@@ -8,7 +8,7 @@ var lineObjArr = [];
 for (var i = 0; i < lines.length; i++)
 {
 	var lineObj = {};
-	lineObj.Magnitude = parseFloat(lines[i].substring(60, 62));
+	lineObj.Magnitude = parseFloat(lines[i].substring(60, 64));
 	lineObj.Text = lines[i];
 	lineObjArr.push(lineObj);
 }
@@ -19,4 +19,3 @@ for (var i = 0; i < lineObjArr.length; i++)
 	sortedText += lineObjArr[i].Text + '\r\n';
 }
 elem.innerText = introduction + sortedText;
-
